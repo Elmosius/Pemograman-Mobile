@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -56,12 +57,12 @@ fun Exercise3(modifier: Modifier = Modifier) {
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "Text composable",
+                        text = stringResource(R.string.text_composable_title),
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                     Text(
-                        text = "Display text and follows the recommended Material Design guidelines.",
+                        text = stringResource(R.string.text_composable_description),
                         textAlign = TextAlign.Justify
                     )
                 }
@@ -80,12 +81,12 @@ fun Exercise3(modifier: Modifier = Modifier) {
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "Image composable",
+                        text = stringResource(R.string.image_composable_title),
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                     Text(
-                        text = "Creates a composable that lays out and draws a given Painter class object.",
+                        text = stringResource(R.string.image_composable_description),
                         textAlign = TextAlign.Justify
                     )
                 }
@@ -106,12 +107,12 @@ fun Exercise3(modifier: Modifier = Modifier) {
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "Row composable",
+                        text = stringResource(R.string.row_composable_title),
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                     Text(
-                        text = "A layout composable that places its children in a horizontal sequence.",
+                        text = stringResource(R.string.row_composable_description),
                         textAlign = TextAlign.Justify
                     )
                 }
@@ -130,12 +131,12 @@ fun Exercise3(modifier: Modifier = Modifier) {
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "Column composable",
+                        text = stringResource(R.string.column_composable_title),
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                     Text(
-                        text = "A layout composable that places its children in a vertical sequence.",
+                        text = stringResource(R.string.column_composable_description),
                         textAlign = TextAlign.Justify
                     )
                 }
