@@ -48,13 +48,13 @@ fun Exercise2(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.icon_01),
             contentDescription = null,
-            modifier = modifier
+            modifier = Modifier
                 .width(200.dp)
                 .height(200.dp)
         )
         Text(
             text = "All tasks completed",
-            modifier = modifier.padding(top = 24.dp, bottom = 8.dp),
+            modifier = Modifier.padding(top = 24.dp, bottom = 8.dp),
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold
 

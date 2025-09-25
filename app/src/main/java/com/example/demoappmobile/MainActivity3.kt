@@ -41,7 +41,7 @@ class MainActivity3 : ComponentActivity() {
 // Exercise 3
 @Composable
 fun Exercise3(modifier: Modifier = Modifier) {
-    Column(modifier = modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxSize()) {
         Row(modifier = Modifier.weight(1f)) {
             Box(
                 modifier = Modifier
