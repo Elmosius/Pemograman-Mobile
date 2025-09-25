@@ -46,11 +46,11 @@ fun Exercise2(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
     ) {
         Image(
-            painter = painterResource(id = R.drawable.test),
+            painter = painterResource(id = R.drawable.icon_01),
             contentDescription = null,
             modifier = modifier
-                .width(250.dp)
-                .height(250.dp)
+                .width(200.dp)
+                .height(200.dp)
         )
         Text(
             text = "All tasks completed",
