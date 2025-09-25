@@ -5,20 +5,16 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,123 +29,49 @@ class MainActivity : ComponentActivity() {
         setContent {
             DemoAppMobileTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Exercise1(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
+// Exercise 1
 @Composable
-fun BoxExample(modifier: Modifier = Modifier) {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
+fun Exercise1(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.fillMaxSize()
     ) {
+
         Image(
             painter = painterResource(id = R.drawable.test),
             contentDescription = null,
-            modifier = Modifier.fillMaxSize()
+            contentScale = ContentScale.Crop,
+            modifier = modifier
+                .fillMaxWidth()
+                .height(150.dp)
         )
         Text(
-            text = "This is a Box Example",
-            color = Color.White,
-            fontSize = 24.sp
+            text = "Jetpack Compose tutorial",
+            fontSize = 24.sp,
+            modifier = modifier.padding(16.dp)
+        )
+        Text(
+            text = "Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.",
+            textAlign = TextAlign.Justify,
+            modifier = modifier.padding(start = 16.dp, end = 16.dp)
+        )
+
+        Text(
+            text = "In this tutorial, you build a simple UI component with declarative functions. You call Compose functions to say what elements you want and the Compose compiler does the rest. Compose is built around Composable functions. These functions let you define your app's UI programmatically because they let you describe how it should look and provide data dependencies, rather than focus on the process of the UI's construction, such as initializing an element and then attaching it to a parent. To create a Composable function, you add the @Composable annotation to the function name.",
+            textAlign = TextAlign.Justify,
+            modifier = modifier.padding(16.dp)
         )
     }
 }
-
-@Composable
-fun ColumnExample(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(20.dp),
-        verticalArrangement = Arrangement.SpaceAround,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Surface(
-            color = Color.Blue,
-            modifier = modifier.fillMaxWidth()
-        ) {
-            Text(
-                text = "Item #1",
-                fontSize = 24.sp,
-                textAlign = TextAlign.Left
-            )
-        }
-        Surface(
-            color = Color.Yellow,
-        ) {
-            Text(
-                text = "Item #2",
-                fontSize = 24.sp,
-                textAlign = TextAlign.Center
-            )
-        }
-        Surface(
-            color = Color.Red,
-            modifier = modifier.fillMaxWidth()
-        ) {
-            Text(
-                text = "Item #3",
-                fontSize = 24.sp,
-                textAlign = TextAlign.Right
-            )
-        }
-    }
-}
-
-@Composable
-fun RowExample(modifier: Modifier = Modifier) {
-    Row(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(20.dp),
-        horizontalArrangement = Arrangement.Center,
-        verticalAlignment = Alignment.CenterVertically
-
-    ) {
-        Surface(
-            color = Color.Blue,
-            modifier = modifier.weight(1f)
-        ) {
-            Text(
-                text = "Item #1",
-                fontSize = 24.sp,
-                textAlign = TextAlign.Left
-            )
-        }
-        Surface(
-            color = Color.Yellow,
-            modifier = modifier.weight(1f)
-        ) {
-            Text(
-                text = "Item #2",
-                fontSize = 24.sp,
-                textAlign = TextAlign.Right
-            )
-        }
-
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-//    BoxExample()
-//    ColumnExample()
-    RowExample()
+    Exercise1()
 }
