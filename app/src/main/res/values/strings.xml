@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">DemoAppMobile</string>
+    <string name="app_name">Demo App</string>
+    <string name="app_name_lemon_click">Lemon App</string>
+    <string name="step1">Tap the tree to pick lemon</string>
+    <string name="step2">Tap the lemon 3 times to squeeze it</string>
+    <string name="step3">Tap the glass to drink it</string>
+    <string name="step4">Tap the empty glass to start again</string>
 </resources>

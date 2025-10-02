@@ -11,9 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppMobile">
         <activity
-            android:name=".Topic3"
+            android:name=".DiceRoll"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.DemoAppMobile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
