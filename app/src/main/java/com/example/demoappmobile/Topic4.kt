@@ -60,7 +60,6 @@ class Topic4 : ComponentActivity() {
                     }
                 ) { innerPadding ->
                     TextFieldExample(modifier = Modifier.padding(innerPadding))
-
 //                    SwitchExample(modifier = Modifier.padding(innerPadding))
                 }
             }

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DemoAppMobile</string>
+    <string-array name="grants">
+        <item>Hibah MBKM</item>
+        <item>Hibah Merdeka</item>
+    </string-array>
+
+
 </resources>
