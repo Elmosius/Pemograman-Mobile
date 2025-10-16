@@ -8,7 +8,7 @@ import androidx.activity.ComponentActivity
 import com.example.demoappmobile.databinding.ActivityMainBinding
 import com.example.demoappmobile.entity.Department
 
-class Topic5 : ComponentActivity() {
+class Topic5a : ComponentActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var grantAdapter: ArrayAdapter<CharSequence>? = null
