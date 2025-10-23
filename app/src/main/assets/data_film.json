@@ -1,0 +1,52 @@
+[
+  {
+    "judul": "Inception",
+    "deskripsi": "Seorang pencuri yang memiliki kemampuan untuk memasuki mimpi orang lain diberikan tugas terakhir untuk menanamkan ide di pikiran targetnya.",
+    "poster": "https://image.tmdb.org/t/p/w500/inception.jpg"
+  },
+  {
+    "judul": "The Dark Knight",
+    "deskripsi": "Batman menghadapi Joker, seorang penjahat psikopat yang ingin membuktikan bahwa semua orang bisa menjadi jahat.",
+    "poster": "https://image.tmdb.org/t/p/w500/dark_knight.jpg"
+  },
+  {
+    "judul": "Interstellar",
+    "deskripsi": "Sekelompok penjelajah luar angkasa berangkat melalui lubang cacing untuk mencari tempat baru bagi umat manusia.",
+    "poster": "https://image.tmdb.org/t/p/w500/interstellar.jpg"
+  },
+  {
+    "judul": "Avengers: Endgame",
+    "deskripsi": "Para Avengers bersatu sekali lagi untuk membalikkan kehancuran yang disebabkan oleh Thanos.",
+    "poster": "https://image.tmdb.org/t/p/w500/endgame.jpg"
+  },
+  {
+    "judul": "Parasite",
+    "deskripsi": "Keluarga miskin menyusup ke rumah keluarga kaya dengan berpura-pura menjadi pekerja profesional.",
+    "poster": "https://image.tmdb.org/t/p/w500/parasite.jpg"
+  },
+  {
+    "judul": "Spider-Man: No Way Home",
+    "deskripsi": "Peter Parker meminta bantuan Doctor Strange untuk membuat orang melupakan identitas rahasianya, tapi sesuatu berjalan salah.",
+    "poster": "https://image.tmdb.org/t/p/w500/spiderman_no_way_home.jpg"
+  },
+  {
+    "judul": "The Matrix",
+    "deskripsi": "Seorang hacker menemukan kenyataan bahwa dunia yang ia tinggali hanyalah simulasi buatan mesin.",
+    "poster": "https://image.tmdb.org/t/p/w500/matrix.jpg"
+  },
+  {
+    "judul": "Joker",
+    "deskripsi": "Kisah asal-usul Arthur Fleck, seorang komedian gagal yang berubah menjadi kriminal gila bernama Joker.",
+    "poster": "https://image.tmdb.org/t/p/w500/joker.jpg"
+  },
+  {
+    "judul": "Guardians of the Galaxy",
+    "deskripsi": "Sekelompok penjahat luar angkasa harus bekerja sama untuk menyelamatkan galaksi dari kehancuran.",
+    "poster": "https://image.tmdb.org/t/p/w500/guardians.jpg"
+  },
+  {
+    "judul": "The Shawshank Redemption",
+    "deskripsi": "Seorang pria yang dipenjara karena kejahatan yang tidak dilakukannya membangun harapan dan persahabatan di balik jeruji besi.",
+    "poster": "https://image.tmdb.org/t/p/w500/shawshank.jpg"
+  }
+]
