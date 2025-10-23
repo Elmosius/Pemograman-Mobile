@@ -4,21 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.demoappmobile.components.pages.DosenPage
-import com.example.demoappmobile.components.pages.HomePage
-import com.example.demoappmobile.components.pages.MahasiswaPage
-import com.example.demoappmobile.components.ui.TopBar
-import com.example.demoappmobile.enum.Route
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.example.demoappmobile.components.pages.DetailPage
+import com.example.demoappmobile.components.pages.MainPage
 import com.example.demoappmobile.ui.theme.DemoAppMobileTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,42 +28,36 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MainContent(modifier: Modifier = Modifier) {
-    var route by remember { mutableStateOf(Route.HOME) }
+fun MainContent() {
+    val navController = rememberNavController()
 
-    val title = when (route) {
-        Route.DOSEN -> "Data Dosen"
-        Route.MAHASISWA -> "Data Mahasiswa"
-        else -> "Data Mahasiswa & Dosen"
-    }
-
-    val showBack = route != Route.HOME
-
-    Scaffold(
-        modifier = Modifier.fillMaxSize(),
-        topBar = {
-            TopBar(
-                title = title,
-                showBack = showBack,
-                onBackClick = { route = Route.HOME }
+    NavHost(
+        navController = navController,
+        startDestination = "home"
+    ) {
+        composable("home") {
+            MainPage(
+                onMovieClick = { movieId ->
+                    navController.navigate("detail/$movieId")
+                }
             )
         }
-    ) { innerPadding ->
-        when (route) {
-            Route.DOSEN -> {
-                DosenPage(modifier = Modifier.padding(innerPadding))
-            }
 
-            Route.MAHASISWA -> {
-                MahasiswaPage(modifier = Modifier.padding(innerPadding))
-            }
-
-            Route.HOME -> {
-                HomePage(
-                    onDosenClick = { route = Route.DOSEN },
-                    onMahasiswaClick = { route = Route.MAHASISWA }
-                )
-            }
+        composable(
+            route = "detail/{movieId}",
+            arguments = listOf(
+                navArgument("movieId") {
+                    type = NavType.IntType
+                }
+            )
+        ) { backStackEntry ->
+            val movieId = backStackEntry.arguments?.getInt("movieId") ?: 0
+            DetailPage(
+                movieId = movieId,
+                onBackClick = {
+                    navController.popBackStack()
+                }
+            )
         }
     }
 }

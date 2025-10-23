@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "judul": "The Shawshank Redemption",
+    "deskripsi": "Seorang banker yang dijatuhi hukuman penjara seumur hidup untuk pembunuhan yang tak dilakukannya dan bagaimana ia bertahan serta menemukan harapan di dalam penjara.",
+    "poster": "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg"
+  },
+  {
+    "id": 2,
+    "judul": "Inception",
+    "deskripsi": "Thriller fiksi ilmiah di mana seorang pencuri memasuki mimpi orang lain untuk mencuri rahasia, dan diberi tugas menanam ide ke dalam pikiran target.",
+    "poster": "https://m.media-amazon.com/images/I/51s+O7th2CL._AC_.jpg"
+  },
+  {
+    "id": 3,
+    "judul": "The Godfather",
+    "deskripsi": "Kisah keluarga mafia Corleone yang kuat, loyalitas, kekuasaan, dan pengkhianatan di dunia kejahatan terorganisir Amerika.",
+    "poster": "https://m.media-amazon.com/images/I/41+eK8zBwQL._AC_.jpg"
+  },
+  {
+    "id": 4,
+    "judul": "The Dark Knight",
+    "deskripsi": "Batman menghadapi Joker — musuh yang menciptakan kekacauan di Gotham dan memaksa Batman mempertanyakan batasan moralnya.",
+    "poster": "https://m.media-amazon.com/images/I/51EbJjl6QnL._AC_.jpg"
+  },
+  {
+    "id": 5,
+    "judul": "Pulp Fiction",
+    "deskripsi": "Kumpulan cerita kejahatan yang saling terkait di Los Angeles — penuh dialog yang tajam, karakter tak terlupakan, dan kejutan demi kejutan.",
+    "poster": "https://m.media-amazon.com/images/I/51UHT1kC5LL._AC_.jpg"
+  },
+  {
+    "id": 6,
+    "judul": "Forrest Gump",
+    "deskripsi": "Kisah pria sederhana dengan IQ rendah yang tanpa disadari terlibat dalam banyak peristiwa sejarah besar di Amerika Serikat, sambil mengejar cinta masa kecilnya.",
+    "poster": "https://m.media-amazon.com/images/I/41cMpw9Y1zL._AC_.jpg"
+  },
+  {
+    "id": 7,
+    "judul": "Fight Club",
+    "deskripsi": "Seorang pria bosan dengan kehidupannya menemukan klub pertarungan rahasia yang mengubah hidupnya secara radikal, dan membawa konsekuensi yang tak terduga.",
+    "poster": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg"
+  },
+  {
+    "id": 8,
+    "judul": "The Matrix",
+    "deskripsi": "Seorang hacker mengetahui bahwa dunia yang ia kenal hanyalah simulasi dan bergabung dengan pemberontakan melawan mesin yang mengendalikan manusia.",
+    "poster": "https://m.media-amazon.com/images/I/51vpnbwFHrL._AC_.jpg"
+  },
+  {
+    "id": 9,
+    "judul": "Gladiator",
+    "deskripsi": "Seorang jenderal Romawi yang dikhianati menjadi budak, kemudian bangkit sebagai gladiator untuk menuntut balas dan mendapatkan kehormatan.",
+    "poster": "https://m.media-amazon.com/images/I/41+eK8zBwQL._AC_.jpg"
+  },
+  {
+    "id": 10,
+    "judul": "Interstellar",
+    "deskripsi": "Dalam misi mencari planet baru untuk manusia, sekelompok astronot menembus lubang cacing, menghadapi waktu dan ruang yang berdampak pada kehidupan mereka di Bumi.",
+    "poster": "https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_.jpg"
+  }
+]
