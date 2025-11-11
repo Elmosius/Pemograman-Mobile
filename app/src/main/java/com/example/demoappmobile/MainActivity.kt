@@ -71,7 +71,5 @@ fun MainContent() {
 fun GreetingPreview() {
     DemoAppMobileTheme {
         MainContent()
-
-
     }
 }
