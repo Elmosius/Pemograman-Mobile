@@ -4,8 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Movie(
-    @SerialName("judul") var judul: String,
-    var deskripsi: String,
-    var poster: String
+data class MyDepartment(
+    @SerialName("id") var id: String,
+    @SerialName("name") var name: String
 )

@@ -9,8 +9,8 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import com.example.demoappmobile.MovieList
-import com.example.demoappmobile.utils.loadMovieData
+import com.example.demoappmobile.MainContent
+import com.example.demoappmobile.utils.loadMovieData2
 
 @Composable
 fun MovieMainPage() {
@@ -20,7 +20,10 @@ fun MovieMainPage() {
         },
         modifier = Modifier.fillMaxSize()
     ) { innerPadding ->
-        MovieList(modifier = Modifier.padding(innerPadding), loadMovieData(LocalContext.current))
+        MainContent(
+            modifier = Modifier.padding(innerPadding),
+            loadMovieData2(LocalContext.current, "data_film.json")
+        )
     }
 }
 

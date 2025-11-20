@@ -45,7 +45,7 @@ class Topic6 : ComponentActivity() {
 //                    }
 //
 //                }
-                
+
                 MovieMainPage()
             }
         }
@@ -150,7 +150,6 @@ fun MovieList(modifier: Modifier = Modifier, movies: List<Movie>) {
 //            "https://image.tmdb.org/t/p/w500/shawshank.jpg"
 //        )
 //    )
-
     LazyColumn(
         modifier = modifier.fillMaxSize()
     ) {
