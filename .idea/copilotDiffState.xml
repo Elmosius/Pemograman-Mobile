@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/MOVIE_APP_README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/MOVIE_APP_README.md" />
+              <option name="updatedContent" value="# Movie App - Phone &amp; Tablet Layout&#10;&#10;Aplikasi sederhana untuk menampilkan daftar movie dengan layout adaptif untuk Phone dan Tablet.&#10;&#10;## Struktur File&#10;&#10;### MainActivity&#10;- `MainActivity.kt` - Entry point aplikasi dengan deteksi ukuran layar&#10;&#10;### UI Components (Shared)&#10;- `ui/component/MovieItem.kt` - Item card untuk menampilkan movie (digunakan oleh phone &amp; tablet)&#10;- `ui/component/MovieDetail.kt` - Komponen detail movie&#10;&#10;### UI Phone&#10;- `ui/phone/HomePage.kt` - Halaman utama untuk phone dengan LazyColumn&#10;- `ui/phone/DetailPage.kt` - Halaman detail untuk phone (navigasi terpisah)&#10;&#10;### UI Tablet&#10;- `ui/tablet/HomePage.kt` - Halaman master-detail dalam satu layar untuk tablet&#10;&#10;### ViewModel &amp; Data&#10;- `viewmodel/movie/Movie.kt` - ViewModel untuk fetch dan manage data movie&#10;- `entity/Movie2.kt` - Data class untuk movie&#10;- `service/ApiService.kt` - Interface Retrofit untuk API&#10;- `service/ApiClient.kt` - Retrofit client configuration&#10;&#10;## Cara Kerja&#10;&#10;### Phone Layout&#10;1. Menampilkan list movie dengan LazyColumn&#10;2. Ketika item diklik, navigasi ke halaman detail terpisah&#10;3. Halaman detail memiliki tombol back untuk kembali ke list&#10;&#10;### Tablet Layout&#10;1. Menampilkan master-detail dalam satu layar (Row layout)&#10;2. List movie di sebelah kiri (40% lebar)&#10;3. Detail movie di sebelah kanan (60% lebar)&#10;4. Ketika item diklik, detail langsung muncul di sebelah kanan&#10;5. Item yang dipilih akan ter-highlight dengan warna berbeda&#10;&#10;## Komponen&#10;&#10;### MovieItem (Unified Component)&#10;- Parameter `isSelected` (optional, default = false)&#10;- Jika `isSelected = true`, background berubah jadi primaryContainer&#10;- Digunakan untuk phone (tanpa selection) dan tablet (dengan selection)&#10;&#10;### MovieDetail&#10;- Menampilkan informasi lengkap movie&#10;- Parameter `isLoading` untuk menampilkan loading indicator&#10;- Menampilkan: Title, ID, Poster URL, dan Description&#10;&#10;## API Endpoints&#10;- `GET movie_data.json` - Get all movies&#10;- `GET m{id}.json` - Get movie detail by ID&#10;&#10;## Dependencies&#10;- Jetpack Compose&#10;- Navigation Compose&#10;- Material3 Window Size Class (untuk deteksi tablet)&#10;- Retrofit &amp; Kotlinx Serialization&#10;- ViewModel &amp; Lifecycle&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -20,11 +20,10 @@ object ApiClient {
         val contentType = "application/json".toMediaType()
 
         Retrofit.Builder()
-            .baseUrl("https://fittest.itmaranatha.org/me_mobile20172/service/")
+            .baseUrl("https://fittest.itmaranatha.org/service_json/")
             .addConverterFactory(json.asConverterFactory(contentType))
             .client(client)
             .build()
             .create(ApiService::class.java)
-
     }
 }
