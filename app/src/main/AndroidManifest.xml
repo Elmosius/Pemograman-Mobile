@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppMobile">
         <activity
+            android:name=".Topic11"
+            android:exported="false"
+            android:label="@string/title_activity_topic12"
+            android:theme="@style/Theme.DemoAppMobile" />
+        <activity
             android:name=".Topic9b"
             android:exported="false"
             android:label="@string/title_activity_topic11"
@@ -38,7 +43,7 @@
             android:label="@string/title_activity_second_topic5b"
             android:theme="@style/Theme.DemoAppMobile" />
         <activity
-            android:name=".Topic11"
+            android:name=".Topic12"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.DemoAppMobile">
