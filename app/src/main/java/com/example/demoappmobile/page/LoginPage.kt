@@ -112,7 +112,7 @@ private fun TextFieldExample(authViewModel: Auth, modifier: Modifier = Modifier)
                 autoCorrect = false,
                 keyboardType = KeyboardType.Password,
             ),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
         )
 
         Spacer(modifier = Modifier.padding(5.dp))

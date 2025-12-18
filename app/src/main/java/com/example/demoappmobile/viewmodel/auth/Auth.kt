@@ -17,6 +17,17 @@ class Auth : ViewModel() {
         user = auth.currentUser
     }
 
+    fun reg(email: String, password: String){
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener { task ->
+                if(task.isSuccessful) {
+                    
+                } else{
+
+                }
+            }
+    }
+
     fun signIn(email: String, password: String) {
         isLoading = true
         auth.signInWithEmailAndPassword(email, password)
