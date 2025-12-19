@@ -22,5 +22,8 @@ class CategoryViewModel : ViewModel() {
         }
     }
 
-
+    override fun onCleared() {
+        super.onCleared()
+        categoryRepository.clearListeners()
+    }
 }
