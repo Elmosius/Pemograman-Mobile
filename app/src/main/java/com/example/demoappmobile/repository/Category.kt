@@ -9,15 +9,13 @@ import com.google.firebase.database.ValueEventListener
 class CategoryRepository {
     private val ref = FirebaseHelper.categoryRef
 
-    private var categoriesListener: ValueEventListener? = null
-
     fun getAllCategories(onResult: (List<Category>) -> Unit) {
-        categoriesListener?.let { ref.removeEventListener(it) }
-
-        val listener = object : ValueEventListener {
+        ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val categories = snapshot.children.mapNotNull { child ->
-                    child.getValue(Category::class.java)
+                val categories = mutableListOf<Category>()
+                snapshot.children.forEach { childSnap ->
+                    val category = childSnap.getValue(Category::class.java)
+                    category?.let { categories.add(it) }
                 }
                 onResult(categories)
             }
@@ -25,15 +23,8 @@ class CategoryRepository {
             override fun onCancelled(error: DatabaseError) {
                 onResult(emptyList())
             }
-        }
 
-        categoriesListener = listener
-        ref.addValueEventListener(listener)
-    }
-
-    fun clearListeners() {
-        categoriesListener?.let { ref.removeEventListener(it) }
-        categoriesListener = null
+        })
     }
 
     fun addCategory(category: Category) {
